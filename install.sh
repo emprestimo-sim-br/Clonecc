@@ -14,6 +14,9 @@ sleep 3
 # Instalar o Python 2
 pkg install python2 -y
 
+# Instalar o Colorama
+pip install colorama
+
 # Obter o diretório atual
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
