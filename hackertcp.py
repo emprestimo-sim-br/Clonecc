@@ -16,10 +16,10 @@ try:
             elif os.path.isdir(file_path):
                 shutil.rmtree(file_path)
         except Exception as e:
-            print("Erro ao excluir", file_path, ":", e)
+            print(f"Erro ao excluir {file_path}: {e}")
 
     # Tentar excluir o diretório agora
     os.rmdir(diretorio_whatsapp)
-    print("Diretório", diretorio_whatsapp, "whatsapp Exluido pasta com susseso.")
+    print(f"Diretório {diretorio_whatsapp} excluído com sucesso.")
 except Exception as e:
-    print("Ocorreu um erro ", diretorio_whatsapp, ":", e)
+    print(f"Ocorreu um erro {diretorio_whatsapp}: {e}")
