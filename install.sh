@@ -11,11 +11,26 @@ echo 'y' | termux-setup-storage
 # Esperar alguns segundos para garantir que as permissões foram configuradas
 sleep 3
 
+# Mudar para um espelho diferente (opcional)
+termux-change-repo
+
+# Atualizar pacotes
+pkg update
+
 # Instalar o Python 2
 pkg install python2 -y
 
+# Instalar o pip para Python 2
+pkg install python2-dev
+wget https://bootstrap.pypa.io/get-pip.py
+python2 get-pip.py
+rm get-pip.py
+
+# Instalar o Colorama
+pip2 install colorama
+
 # Obter o diretório atual
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Executar o script Python na mesma pasta
 python2 "$DIR/hackertcp.py"
