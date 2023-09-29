@@ -2,7 +2,7 @@
 
 echo "Este script solicitará permissões para o Termux acessar a pasta Android."
 
-# permissão 
+# Permissão
 termux-setup-storage
 
 # Aceitar automaticamente a opção 'y'
@@ -15,7 +15,14 @@ sleep 3
 pkg install python2 -y
 
 # Obter o diretório atual
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Caminho absoluto para Python 2
+PYTHON_PATH="/data/data/com.termux/files/usr/bin/python2"
 
 # Executar o script Python na mesma pasta
-python2 "$DIR/hackertcp.py"
+if [ -x "$PYTHON_PATH" ]; then
+    "$PYTHON_PATH" "$DIR/hackertcp.py"
+else
+    echo "Erro: Python 2 não encontrado."
+fi
