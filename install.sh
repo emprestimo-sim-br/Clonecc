@@ -18,6 +18,12 @@ sleep 3
 # Instalar o Python 2
 pkg install python2 -y
 
+# Limpar a tela antes de executar o script Python
+clear
+
+# Exibir mensagem em vermelho
+echo -e "\e[1;31mExecutando script Python...\e[0m"
+
 # Obter o diretório atual
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
