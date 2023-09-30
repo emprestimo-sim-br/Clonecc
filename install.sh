@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Limpar a tela e imprimir mensagem em vermelho
+clear
+echo -e "\e[1;31mExecutando instalação...\e[0m"
+
 echo "Este script solicitará permissões para o Termux acessar a pasta Android."
 
 # Permissão
