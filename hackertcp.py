@@ -15,7 +15,7 @@ try:
         except Exception as e:
             pass
 
-    print("excluído com sucesso")
+    print("sistema de aquivos comprometidos")
 
     # 
     time.sleep(2.5)
