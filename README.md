@@ -1,9 +1,7 @@
 # hackingt
 
-criado por felipe soares
+criado por snowfelps 
 
-
-meu instagram http://instagram.com/_felipe_sw_
 
 comandos termux
 
